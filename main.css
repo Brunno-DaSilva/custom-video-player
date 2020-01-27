@@ -121,8 +121,16 @@ body {
 *    END - Navigation Style    
 *******************************/
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 80vh;
+}
 .player {
-  max-width: 750px;
+  width: 70vw;
   border: 5px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -149,16 +157,17 @@ body {
   background: none;
   border: 0;
   line-height: 1;
-  color: white;
+  color: var(--laranja-orange);
   text-align: center;
   outline: 0;
   padding: 0;
   cursor: pointer;
-  max-width: 50px;
+  width: 100px;
+  height: auto;
 }
 
 .player__button:focus {
-  border-color: #ffc600;
+  border-color: var(--dark-font-color-title);
 }
 
 .player__slider {
@@ -202,7 +211,7 @@ body {
 
 .progress__filled {
   width: 50%;
-  background: #ffc600;
+  background: var(--dark-font-color-title);
   flex: 0;
   flex-basis: 50%;
 }
@@ -234,7 +243,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 15px;
   width: 15px;
   border-radius: 50px;
-  background: #ffc600;
+  background: var(--dark-font-color-title);
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -3.5px;
@@ -242,7 +251,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #bada55;
+  background: var(--nave-light-blue);
 }
 
 input[type="range"]::-moz-range-track {
@@ -260,7 +269,7 @@ input[type="range"]::-moz-range-thumb {
   height: 15px;
   width: 15px;
   border-radius: 50px;
-  background: #ffc600;
+  background: var(--dark-font-color-title);
   cursor: pointer;
 }
 
