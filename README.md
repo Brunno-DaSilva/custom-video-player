@@ -12,4 +12,4 @@
 #100DaysOfCode Challange
 ```
 
-##### Demo: https://dasilvabrunotexas.github.io/custom-video-player/
+### Demo: https://brunno-dasilva.github.io/custom-video-player/
